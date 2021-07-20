@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f9c9f5cd0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <a href=""><li><img src="logo.png" alt=""></li></a>
+                <a href=""><li class="web-name">E-Commerce</li></a>
+                
+                <ul class="menu-items" id="sidebar">
+                    <li id="close" onclick="closeNav()"><i class="fas fa-times"></i></li>
+                    <li><input type="search" placeholder="Search"></li>
+                    <a href="index.html"><li class="For-hover" id="list">Home</li></a>
+                    <a href="#category"><li class="For-hover">Categories</li></a>
+                    <a href="#watches"><li class="For-hover">Products</li></a>
+                    <a href="#Contact"><li class="For-hover">Contact Us</li></a>
+                </ul>
+                <li id="main" onclick="openNav()" class="menu-bar"><i class="fas fa-bars"></i></li>
+            </ul>
+        </nav>
+        <section class="banner-section">
+            <div class="banner">
+                <div class="banner-text">
+                    <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis totam illum deserunt fuga sequi repudiandae voluptatibus! Sapiente dolorum amet alias.</p><br>
+                    <h3 class="price">$1189</h3>
+                    <a href=""><button class="banner-button">Buy Now <i class="fas fa-arrow-right"></i></button></a>
+                </div>
+                <div class="banner-image">
+                    <img src="tv.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="category-container">
+        <div class="section-heading" id="category">
+            <h1>Categories</h1>
+            <a href=""><h3>See all</h3></a>
+        </div>
+        <div class="categories">
+            <a href="#watches">
+                <div class="category product1">
+                    <h1>Watch</h1>
+                    <img class="watch" src="watch.png" alt="">
+                </div>
+            </a>
+            <a href="#shoes">
+                <div class="category product2">
+                    <h1>Shoes</h1>
+                    <img src="shoes.png" alt="">
+                </div>
+            </a>
+            <a href="#Backpacks">
+                <div class="category product3">
+                    <h1>Backpacks</h1>
+                    <img src="bags.png" alt="">
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="products-watch">
+        <div class="section-heading" id="watches">
+            <h1>Watches</h1>
+            <a href=""><h3>See all</h3></a>
+        </div>
+        <div class="products">
+            <div class="product watches">
+                <img src="images/watch1.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem necessitatibus veritatis voluptate, reiciendis fugit!</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="product watches">
+                <img src="images/watch2.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nesciunt dignissimos fuga ipsum magni illo.</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="product watches">
+                <img src="images/watch3.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit quibusdam laboriosam consequuntur maiores quod.</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-shoes">
+        <div class="section-heading" id="shoes">
+            <h1>Shoes</h1>
+            <a href=""><h3>See all</h3></a>
+        </div>
+        <div class="products">
+            <div class="product shoe">
+                <img src="images/shoes1.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem necessitatibus veritatis voluptate, reiciendis fugit!</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="product shoe">
+                <img src="images/shoes2.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nesciunt dignissimos fuga ipsum magni illo.</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="product shoe">
+                <img src="images/shoes3.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit quibusdam laboriosam consequuntur maiores quod.</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="products-bags">
+        <div class="section-heading" id="Backpacks">
+            <h1>Backpacks</h1>
+            <a href=""><h3>See all</h3></a>
+        </div>
+        <div class="products">
+            <div class="product bag">
+                <img src="images/bags1.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem necessitatibus veritatis voluptate, reiciendis fugit!</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="product bag">
+                <img src="images/bags2.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nesciunt dignissimos fuga ipsum magni illo.</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="product bag">
+                <img src="images/bags3.png" alt="">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit quibusdam laboriosam consequuntur maiores quod.</p><br>
+                <h3>$56</h3>
+                <button type="submit">Buy now <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="products-bags">
+        <a href="" style="color: black;">
+            <h3 style="text-align: center;">See more Products</h3>
+        </a>
+    </section>
+
+    <section class="contact-section">
+        <div class="section-heading" id="Contact">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contacts">
+            <h2>Let's stay tuned with us</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi.</p>
+            <input type="email" placeholder="Your Mail Address here">
+            <button>Submit</button>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <h5>
+            Made for learning <br>
+            Ⓒ Copyright 2021 || All Rights Reserved || E-Commerce
+        </h5>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

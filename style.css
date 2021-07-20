@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ff6b6b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23ff3c3c'/%3E%3Cstop offset='1' stop-color='%23ff0000'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='27' height='27' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ff5656' cx='13.5' cy='13.5' r='13.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.15'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    margin: 0 8%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.navbar ul {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+}
+.navbar ul a {
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li {
+    margin-left: 22px;
+}
+.navbar ul li.web-name {
+    margin-top: 10px;
+}
+.navbar ul li img {
+    max-width: 40px;
+    transform: translateY(-5%);
+}
+.navbar ul li input {
+    border: none;
+    outline: none;
+    background-color: rgb(204, 204, 204);
+    padding: 10px 15px;
+    width: 270px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s linear;
+    margin: 0;
+}
+.navbar ul li input:hover {
+    background-color: black;
+    color: white;
+}
+.navbar ul li input:focus {
+    background-color: black;
+    color: white;
+}
+#close {
+    display: none;
+}
+.fa-bars:hover {
+    transform: rotate(360deg);
+    transition: .2s ease;
+}
+.For-hover {
+    margin-top: -5%;
+    padding: 5px 8px;
+    transition: .3s linear;
+}
+.For-hover:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.menu-items {
+    display: block;
+}
+.menu-bar {
+    display: none;
+}
+.banner-section {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 10px;
+    margin-bottom: 2%;
+}
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.banner-text {
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.banner-text h1 {
+    font-size: 30px;
+}
+.banner-image {
+    margin-left: 20%;
+}
+.banner-image img {
+    width: 70%;
+    margin-top: 8%;
+}
+.price {
+    color: rgb(248, 105, 105);
+    font-size: 23px;
+}
+.banner-button {
+    background-image: linear-gradient(#ff6c84,#ff395a);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.category-container, .products-watch, .products-shoes, .products-bags, .contact-section {
+    margin: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+}
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.section-heading a {
+    color: black;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.categories a {
+    text-decoration: none;
+    color: black;
+}
+.category {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15px;
+    padding-top: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.category img {
+    max-width: 30%;
+    transform: translateY(0%);
+}
+.product1 {
+    background-image: linear-gradient(#ff95a7,#ff5d78);
+}
+.product2 {
+    background-image: linear-gradient(#ffca67, #ffd900);
+}
+.product3 {
+    background-image: linear-gradient(rgb(133, 133, 255), rgb(71, 71, 255));
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.product {
+    padding: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 5px 12px black;
+}
+.product img {
+    max-width: 70%;
+}
+.product h1 {
+    font-weight: bolder;
+    font-size: 25px;
+}
+.product button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 17px;
+}
+.watches {
+    background-image: linear-gradient(#fccb70, #fda706);
+}
+.shoe {
+    background-image: linear-gradient(#9b9bfd, #5858ff);
+}
+.bag {
+    background-image: linear-gradient(rgb(255, 157, 157), rgb(255, 96, 96));
+}
+
+.contacts {
+    background-color: pink;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    border: none;
+    border-radius: 20px;
+}
+.contacts input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 15px;
+    width: 300px;
+    margin-top: 10px;
+}
+.contacts button {
+    background-color: #ff1d61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+.contacts button:hover {
+    background-color: #fc0e55;
+}
+.footer-section {
+    background-color: #242424;
+    color: #a3a3a3;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+    .navbar ul {
+        font-size: 15px;
+    }
+    .navbar ul li.web-name {
+        margin-top: 10px;
+    }
+    .navbar ul li input {
+        width: 200px;
+        font-size: 13px;
+        margin-top: -5px;
+        padding: 8px 13px;
+    }
+    
+    
+}
+@media screen and (max-width: 780px) {
+    .navbar ul {
+        font-size: 12px;
+    }
+    .navbar ul li {
+        margin-left: 5px;
+    }
+    .navbar ul li.web-name {
+        margin-top: 10px;
+    }
+    .navbar ul li img {
+        max-width: 30px;
+        transform: translateY(-5%);
+        margin-right: 5px;
+    }
+    .navbar ul li input {
+        width: 170px;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: -5px;
+        padding: 5px 10px;
+    }
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-text {
+        width: 80%;
+        text-align: center;
+    }
+    .banner-text h1 {
+        font-size: 27px;
+    }
+    .banner-image {
+        margin-left: 25%;
+    }
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .category {
+        font-size: 17px;
+    }
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (max-width:680px) {
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul li.menu-bar {
+        display: flex;
+        justify-content: space-between;
+        font-size: 35px;
+    }
+    .navbar ul.menu-items {
+        display: none;
+    }
+    .navbar ul li input {
+        width: 150px;
+    }
+    .banner-text {
+        width: 75%;
+        text-align: center;
+        padding-left: 37px;
+        padding-top: 15px;
+    }
+    .banner-text p {
+        font-size: 10px;
+    }
+    .banner-text h1 {
+        font-size: 23px;
+    }
+    .categories {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contacts {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contacts input {
+        width: 120px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width:350px) {
+    .navbar ul li input {
+        width: 110px;
+    }
+    .banner-text {
+        width: 75%;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+    .contacts {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contacts input {
+        width: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
