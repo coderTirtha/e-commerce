@@ -139,6 +139,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    color: white;
 }
 .section-heading a {
     color: white;
